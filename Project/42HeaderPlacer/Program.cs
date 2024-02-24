@@ -60,6 +60,9 @@ public class Program
 
         string[] header = new string[HeaderHeight];
 
+        //Used to avoid overriding last update time
+        DateTime temp_change_date = info.LastWriteTime;
+
         //Used as temp to fill them back again
         string[] lines = File.ReadAllLines(Path);
 
@@ -131,7 +134,7 @@ public class Program
 
         //Line start
         //Not using file info cause the last update it that one is going on now
-        header[8] = $"/*   Updated: {DateTime.Now} by {IntraUsername}";
+        header[8] = $"/*   Updated: {temp_change_date} by {IntraUsername}";
 
         //Padding: total length - length of already placed chars - end line chars - 1 (boh)
         padding = HeaderLength - header[8].Length - "###   ########.fr       */".Length - 1;
@@ -153,6 +156,7 @@ public class Program
 
         File.AppendAllLines(Path, header);
         RewriteFile(Path, lines);
+        File.SetLastWriteTime(Path, temp_change_date);
     }
 
     //I hope it doesn't change git history, cause git should check the code it self and it's changing
