@@ -169,14 +169,15 @@ public class Program
         //If the header exist, start to rewrite lastfile from end of header
         int i = (AlreadyExistHeader(Lines)) ? HeaderHeight : 0;
 
-        //If there is an empy line after the header -> skip it cause it will be writte in the loop
-        if (Lines[i] == "")
-            i++;
+        //If there isn't an empy line after the header -> add for normi
+        if (Lines[i] != "")
+            File.AppendAllText(Path, "\n");
 
         //Rewriting all lines except header
-        while(i < Lines.Length)
+        //last \n is for normi new line
+        while (i < Lines.Length)
         {
-            File.AppendAllText(Path, '\n' + Lines[i]);
+            File.AppendAllText(Path, Lines[i] + '\n');
             i++;
         }
     }
