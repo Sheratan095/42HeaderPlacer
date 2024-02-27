@@ -1,0 +1,3 @@
+msg = 'ciao'
+
+print(msg)
