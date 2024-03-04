@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -117,7 +118,7 @@ public class Program
         #region header[7] (Creation)
 
         //Line start
-        header[7] = $"/*   Created: {info.CreationTime} by {IntraUsername}";
+        header[7] = $"/*   Created: {info.CreationTime.ToString("yyyy-MM-dd HH-mm-ss")} by {IntraUsername}";
 
         //Padding: total length - length of already placed chars - end line chars - 1 (boh)
         padding = HeaderLength - header[7].Length - "#+#    #+#             */".Length - 1;
@@ -134,7 +135,7 @@ public class Program
 
         //Line start
         //Not using file info cause the last update it that one is going on now
-        header[8] = $"/*   Updated: {temp_change_date} by {IntraUsername}";
+        header[8] = $"/*   Updated: {temp_change_date.ToString("yyyy-MM-dd HH-mm-ss")} by {IntraUsername}";
 
         //Padding: total length - length of already placed chars - end line chars - 1 (boh)
         padding = HeaderLength - header[8].Length - "###   ########.fr       */".Length - 1;
@@ -183,7 +184,7 @@ public class Program
     }
 
     #endregion
-
+    
     static bool AlreadyExistHeader(string[] Lines)
     {
         if (Lines.Length < HeaderHeight)

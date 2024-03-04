@@ -12,3 +12,10 @@ C:\Users\marco\Desktop\42HeaderPlacer\Project\42HeaderPlacer\obj\Debug\42HeaderP
 C:\Users\marco\Desktop\42HeaderPlacer\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.csproj.CoreCompileInputs.cache
 C:\Users\marco\Desktop\42HeaderPlacer\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.exe
 C:\Users\marco\Desktop\42HeaderPlacer\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.pdb
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\bin\Debug\42HeaderPlacer.exe.config
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\bin\Debug\42HeaderPlacer.exe
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\bin\Debug\42HeaderPlacer.pdb
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.csproj.AssemblyReference.cache
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.csproj.CoreCompileInputs.cache
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.exe
+C:\Users\marco\Desktop\42HeaderPlacer\C#\Project\42HeaderPlacer\obj\Debug\42HeaderPlacer.pdb
